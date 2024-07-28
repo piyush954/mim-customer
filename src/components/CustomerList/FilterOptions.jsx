@@ -14,10 +14,10 @@ function FilterOptions() {
               type="radio"
               id="male"
               name="gender"
-              className={styles.visuallyHidden}
+              className="form-check-input"
+              checked
             />
-            <label htmlFor="male" className={styles.radioLabel}>
-              <span className={styles.customRadio}></span>
+            <label htmlFor="male" className="form-label mb-0">
               Male
             </label>
           </div>
@@ -28,35 +28,27 @@ function FilterOptions() {
               type="radio"
               id="female"
               name="gender"
-              className={styles.visuallyHidden}
+              className="form-check-input"
             />
-            <label htmlFor="female" className={styles.radioLabel}>
-              <span className={styles.customRadio}></span>
+            <label htmlFor="female" className="form-label mb-0">
               Female
             </label>
           </div>
         </div>
       </div>
       <div className={styles.dateFilter}>
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/3a86b7163647062fb0db16b21487ffb5c5aef3c47cf670a96c772edd53befbb2?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-          alt=""
-          className={styles.calendarIcon}
-        />
-        <span className={styles.dateRange}>13/04/2022 - 11/05/2022</span>
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/085ac558ba9d6de1795147ee05aecbb39f027086375461dba6e022b010aad148?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-          alt=""
-          className={styles.dropdownIcon}
-        />
+        <input type="date" className={styles.userDate} />
       </div>
       <div className={styles.departmentFilter}>
-        <span>Department</span>
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/085ac558ba9d6de1795147ee05aecbb39f027086375461dba6e022b010aad148?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-          alt=""
-          className={styles.dropdownIcon}
-        />
+        <select
+          className={styles.userSelect}
+          aria-label="Default select example"
+        >
+          <option selected>Department</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
       </div>
     </div>
   );

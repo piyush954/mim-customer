@@ -133,49 +133,18 @@ function CustomerTable() {
       <table className={styles.customerTable}>
         <thead>
           <tr>
-            <th className={styles.checkboxHeader}>
-              <input
-                type="checkbox"
-                id="selectAll"
-                className={styles.visuallyHidden}
-              />
-              <label
-                htmlFor="selectAll"
-                className={styles.customCheckbox}
-              ></label>
-            </th>
             <th>Sr No.</th>
             <th>
               Name{" "}
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/84c4e3d9e20bccdda0cced04b5377b918b01d924efe8bc7475650bfc83e64b41?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-                alt=""
-                className={styles.sortIcon}
-              />
             </th>
             <th>
               Date of Joining{" "}
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/7cffa7c1a8d1e3dbfe824b14fe328d4fa2e096f2b3c1ae82099f9c576568913a?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-                alt=""
-                className={styles.sortIcon}
-              />
             </th>
             <th>
               Gender{" "}
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1df7c50c1ac1a483b8bd50ba380bd3fc779484892ca733ac7c81bb59bc5f5cee?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-                alt=""
-                className={styles.sortIcon}
-              />
             </th>
             <th>
               Phone{" "}
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/54b40acc0cf81043933d978c8c93845249b74d68a0d42b1e9a85844f8e8a0ef1?apiKey=dfc7dbfa76d043c4a69edcbff91a85cb&&apiKey=dfc7dbfa76d043c4a69edcbff91a85cb"
-                alt=""
-                className={styles.sortIcon}
-              />
             </th>
             <th>Action</th>
           </tr>

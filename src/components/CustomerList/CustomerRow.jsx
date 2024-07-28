@@ -9,30 +9,29 @@ function CustomerRow({ customer, index }) {
 
   return (
     <tr className={rowClass}>
-      <td>
-        <input
-          type="checkbox"
-          id={`select-${customer.id}`}
-          className={styles.visuallyHidden}
-        />
-        <label
-          htmlFor={`select-${customer.id}`}
-          className={styles.customCheckbox}
-        ></label>
-      </td>
       <td>{customer.id}</td>
       <td>{customer.name}</td>
       <td>{customer.joinDate}</td>
       <td>{customer.gender}</td>
       <td>{customer.phone}</td>
       <td>
-        <button className={styles.actionButton}>
-          <img
-            src={`http://b.io/ext_${8 + (index % 3)}-`}
-            alt="Action"
-            className={styles.actionIcon}
-          />
-        </button>
+        <div class="dropdown">
+          <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-three-dots-vertical"></i>
+          </span>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/">
+                Edit
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="/">
+                Delete
+              </a>
+            </li>
+          </ul>
+        </div>
       </td>
     </tr>
   );
